@@ -6,7 +6,7 @@ function App() {
   const [stringValue, setStringValue] = useState("");
   const [finalValue, setFinalValue] = useState("");
   const [sum, setSum] = useState(0);
-  const calculate = () => {
+  const add = () => {
     if(stringValue != '') {
       const numbers = stringValue.split(',').map((num) => Number(num));
       console.log("Sum ------>>>>> ", sum);
@@ -35,7 +35,7 @@ function App() {
       <div className="card">
         <input placeholder='Enter the string value' className='input' value={stringValue} onChange={handleChange} />
         <br />
-        <button onClick={() => calculate()} className='submitButton'>
+        <button onClick={() => add()} className='submitButton'>
           Submit
         </button>
         <button onClick={() => clear()}>
