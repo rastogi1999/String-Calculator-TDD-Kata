@@ -12,3 +12,6 @@ Currently, two official plugins are available:
 2. npm run dev
 3. npm run test
 4. npm run coverage
+
+
+![alt text](image-1.png)
